@@ -1,0 +1,20 @@
+# Python virtual environments (recreate from documented dependencies)
+/venv/
+/.venv/
+
+# Python-generated files
+__pycache__/
+*.py[cod]
+
+# Generated run output and EMG recordings
+/DataLog/
+/emg_logs/
+*.log
+
+# Local configuration and editor state
+.env
+.vscode/
+
+# Operating-system files
+.DS_Store
+Thumbs.db
