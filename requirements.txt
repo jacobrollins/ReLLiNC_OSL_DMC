@@ -1,0 +1,13 @@
+#tested environment: python 3.11.8, pip 23.3.1
+
+# Open Source Leg
+opensourceleg==3.5.0
+
+# Dephy actuator communication
+flexsea==12.2.3
+
+# Numerical processing
+numpy==1.26.4
+
+# EMG serial/UART communication
+pyserial==3.5
