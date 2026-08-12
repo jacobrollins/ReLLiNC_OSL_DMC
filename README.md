@@ -25,9 +25,6 @@ EMG Signal Processing
 Direct Myoelectric Controller
     │
     ▼
-OSL Volitional Controller
-    │
-    ▼
 OSL Actuator
 
 The repository is organized to separate active control code, EMG acquisition, test programs, experimental data, and obsolete development code.
