@@ -19,7 +19,7 @@ except Exception as e:
 atexit.register(lambda: ser.close() if ser.is_open else None)
 
 # Folder Location to save .csv
-LOG_DIR = "/home/apt/emgtest/EPM-Data-Stream/emglogs"
+LOG_DIR = "/home/apt/ReLLiNC_OSL_DMC/EPM-Data-Stream/emglogs"
 os.makedirs(LOG_DIR, exist_ok=True)
 
 # Add timestamp output to filename

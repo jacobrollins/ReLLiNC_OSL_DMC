@@ -1,9 +1,0 @@
-__pycache__/
-*.py[cod]
-.venv/
-venv/
-DataLog/
-*.csv
-*.log
-.env
-.vscode/

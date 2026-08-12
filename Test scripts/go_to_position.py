@@ -3,7 +3,9 @@ import time
 
 from opensourceleg.actuators.base import CONTROL_MODES
 from opensourceleg.actuators.dephy import DephyActuator
-from opensourceleg.utilities import SoftRealtimeLoop, units
+from opensourceleg.utilities import units
+
+from opensourceleg.utilities import SoftRealtimeLoop
 
 FREQUENCY = 200
 

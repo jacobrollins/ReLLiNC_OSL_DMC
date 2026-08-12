@@ -13,7 +13,9 @@ import numpy as np
 
 from opensourceleg.actuators.base import CONTROL_MODES
 from opensourceleg.actuators.dephy import DephyActuator
-from opensourceleg.utilities import SoftRealtimeLoop, units
+from opensourceleg.utilities import units
+
+from opensourceleg.utilities import SoftRealtimeLoop
 
 FREQUENCY = 200
 
@@ -28,7 +30,7 @@ FREQUENCY = 200
 ankle = DephyActuator(
     tag="ankle",
     firmware_version="7.2.0",
-    port="/dev/ttyACM0",
+    port="/dev/ttyACM1",
     gear_ratio=9 * 83 / 18,
     frequency=FREQUENCY,
 )
