@@ -1,4 +1,4 @@
-#tested environment: python 3.11.8, pip 23.3.1
+#tested environment: Python 3.13.5, pip 26.2.1
 
 # Open Source Leg
 opensourceleg==3.5.0
