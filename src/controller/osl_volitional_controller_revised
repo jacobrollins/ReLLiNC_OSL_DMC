@@ -14,7 +14,7 @@ Last edits: 7/29/2026
 import numpy as np
 from opensourceleg import opensourceleg as osl
 import opensourceleg.utilities.units as units
-from UART_emg_reader import UARTEMGReader
+from EMG.UART_emg_reader import UARTEMGReader as emg
 
 offline_mode = False  # Set to true for debugging without hardware
 
