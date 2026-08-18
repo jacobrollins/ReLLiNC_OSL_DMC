@@ -11,7 +11,7 @@ Last Edits: 5/07/24
 """
 import numpy as np
 import opensourceleg.tools.units as units
-from opensourceleg.robots.osl import OpenSourceLeg
+from opensourceleg.osl import OpenSourceLeg
 from OSL_EMG_Functions import EMG
 
 offline_mode = False  # Set to true for debugging without hardware
