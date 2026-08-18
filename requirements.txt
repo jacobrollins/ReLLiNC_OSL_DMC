@@ -11,3 +11,6 @@ numpy==1.26.4
 
 # EMG serial/UART communication
 pyserial==3.5
+
+#actuator communication
+smbus2==0.6.1
