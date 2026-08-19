@@ -36,7 +36,6 @@ rellinc_osl_dmc/
 ├── src/
 │   ├── controller/
 │   │   └── osl_volitional_controller_revised/
-│   │       └── OSL volitional controller
 │   │
 │   ├── direct-myoelectric-control/
 │   │   └── code/

@@ -1,6 +1,7 @@
 import sys
 sys.path.append("/home/apt/ReLLiNC_OSL_DMC/src")
 
+import time
 from EMG.UART_emg_reader import UARTEMGReader
 
 emg = UARTEMGReader(
@@ -12,4 +13,5 @@ while True:
     samples = emg.read_latest()
 
     if samples is not None:
-        print(samples)
+        print(f"GAS: {samples[1]}, TA: {samples[2]}")
+    time.sleep(0.2) 

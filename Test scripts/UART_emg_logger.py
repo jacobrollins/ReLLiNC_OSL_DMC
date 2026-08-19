@@ -12,7 +12,9 @@ import os
 import time
 from datetime import datetime
 
-from src.controller.UART_emg_reader import UARTEMGReader
+import sys
+sys.path.append("/home/apt/ReLLiNC_OSL_DMC/src")
+from EMG.UART_emg_reader import UARTEMGReader
 
 
 LOG_DIR = "/home/apt/ReLLiNC_OSL_DMC/EPM-Data-Stream/emglogs"
