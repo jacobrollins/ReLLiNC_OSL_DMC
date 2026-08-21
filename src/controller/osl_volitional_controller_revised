@@ -23,7 +23,7 @@ from opensourceleg.robots.osl import OpenSourceLeg
 from opensourceleg.utilities.softrealtimeloop import SoftRealtimeLoop
 from opensourceleg.utilities import units
 from opensourceleg.logging.logger import LOGGER
-from EMG.UART_emg_reader import UARTEMGReader as EMG
+from EMG.UART_EMG_Functions import EMG
 
 offline_mode = True  # Set to True for debugging without hardware
 FREQUENCY = 200
@@ -42,7 +42,7 @@ passive_ankle_position = 0    # [deg]
 ankle_stiffness = 200         # [Nm/rad]
 ankle_damping = 5             # [Nms/rad]
 
-subjectID = 'apt'            # Update to user name if desired
+subjectID = 'JR'            # Update to user name if desired
 
 cal_filename = './' + subjectID + '_EMG_Cal.yaml'
 
@@ -129,8 +129,9 @@ if __name__ == "__main__":
     )
 
     clock = SoftRealtimeLoop(dt=1 / FREQUENCY)
-    emg = EMG(a_channel = 2, b_channel = 3, time_window = .1, time_step = 0.001, ADC_offset_a=510, ADC_offset_b=515)
+    emg = EMG(ta_channel = 2, gas_channel = 3, time_window = .1, time_step = 0.001)
     emg.calEMGLoad(cal_filename)
+    print("Calibration object:", emg.calEMGData)
 
     volitional_controller = VolitionalController(emg)
     

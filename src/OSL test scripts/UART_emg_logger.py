@@ -16,6 +16,7 @@ import sys
 sys.path.append("/home/apt/ReLLiNC_OSL_DMC/src")
 from EMG.UART_emg_reader import UARTEMGReader
 
+FREQUENCY = 4000  # EPM EMG sample frequency in Hz
 
 LOG_DIR = "/home/apt/ReLLiNC_OSL_DMC/EPM-Data-Stream/emglogs"
 os.makedirs(LOG_DIR, exist_ok=True)
@@ -40,7 +41,7 @@ def main():
                 while reader.packet_count >= next_heartbeat:
                     print(f"Processed {reader.packet_count} packets, logged {logged_rows} rows")
                     next_heartbeat += 5000
-                time.sleep(0.001)
+                time.sleep(1 / FREQUENCY)
         except KeyboardInterrupt:
             print(f"Saved {reader.packet_count} packets to {OUTPUT_FILE}.")
 
